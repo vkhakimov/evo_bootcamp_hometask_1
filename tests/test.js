@@ -13,8 +13,6 @@ test('should properly get the rectangle area', () => {
 test('should properly get the rectangle info', () => {
     let length = 5;
     let width = 5;
-    const perimeter = getRectanglePerimeter(length, width);
-    const area = getRectangleArea(length, width);
-    const output = `The perimeter of a rectangle is ${perimeter} and the area is ${area}`
-    expect(output).toBe("The perimeter of a rectangle is 20 and the area is 25");
+    const info = getRectangleInfo(length, width);
+    expect(info).toBe("The perimeter of a rectangle is 20 and the area is 25");
 });
