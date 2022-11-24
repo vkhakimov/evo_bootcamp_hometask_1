@@ -13,6 +13,8 @@ test('should properly get the rectangle area', () => {
 test('should properly get the rectangle info', () => {
     let length = 5;
     let width = 5;
-    const info = getRectangleInfo(length, width);
-    expect(info).toBe("The perimeter of a rectangle is 20 and the area is 25");
+    
+    console.log = jest.fn();
+    getRectangleInfo(length, width);
+    expect(console.log).toHaveBeenCalledWith("The perimeter of a rectangle is 20 and the area is 25");
 });

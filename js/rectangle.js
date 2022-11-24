@@ -9,6 +9,5 @@ export function getRectangleArea(length, width) {
 export function getRectangleInfo(length, width) {
     const area = getRectangleArea(length, width);
     const perimeter = getRectanglePerimeter(length, width);
-    const info = `The perimeter of a rectangle is ${perimeter} and the area is ${area}`
-    return info;
+    return console.log(`The perimeter of a rectangle is ${perimeter} and the area is ${area}`)
 }
